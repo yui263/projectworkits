@@ -1,6 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
 import { useState, useEffect } from 'react'; 
+import vaso1 from './assets/images/vaso1.png'; 
+import vaso2 from './assets/images/vaso2.png';  
+import vaso3 from './assets/images/vaso3.png';  
+import vasca from './assets/images/vasca.png'; 
+
+
+
+
+
+
 
 
     function App() { 
@@ -71,17 +81,46 @@ const intervalloUmidita1 = setInterval(fetchUmiditaVaso, 55000);
            </div>
            <div className='main'>
                <h1>Arduino's Control Panel</h1>
-               <h5>Umidità delle piante in tempo reale: </h5>
-               <ol>
-                   <li>Vaso 1: {u1}</li>
-                   <li>Vaso 2: {u2}</li>
-                   <li>Vaso 3: {u3}</li>
-                   <li>Vaso 4: {u4}</li>
-               </ol>
-               <h5>Livello liquidi dei vasi che riforniscono: </h5>
-               <ol>
-                   <li>Acqua liscia: {sl1}</li>
-               </ol>
+               <h2 style={{fontWeight: 'bold'}}>Umidità delle piante in tempo reale!</h2> 
+
+               <div className='grid_container'> 
+
+
+                  <div className='grid_item'> 
+               <h3>VASO CON BASILICO: </h3>
+               <img src={vaso1} alt='basil_vase' height="300px" width="300px" />
+               <h2>Umidità terreno : {u1}</h2> 
+               </div>
+
+
+               <div className='grid_item'>
+               <h3>VASO CON ULIVO: </h3> 
+               <img src={vaso2} alt='basil_vase' height="300px" width="300px" /> 
+               <h2>Umidità terreno : {u2}</h2>  
+</div>
+               
+               <div className='grid_item'>
+                <h3>VASO CON ROSMARINO 1 : </h3> 
+                <img src={vaso3} alt='rosemary_vase' height="300px" width="300px" /> 
+                <h2>Umidità terreno : {u3}</h2> 
+
+               </div> 
+
+               <div className='grid_item'>
+                <h3>VASO CON ROSMARINO 2 : </h3> 
+                <img src={vaso3} alt='rosemary_vase_copy' height="300px" width="300px" /> 
+                <h2>Umidità terreno : {u4}</h2> 
+
+               </div>
+               
+               </div> 
+
+
+
+               <h3>VASCA ACQUA</h3> 
+               <img src={vasca} alt='tub' height="300px" width="300px" /> 
+               <h2>Livello acqua : {sl1}</h2> 
+               
            </div>
            <div className='footer'>
                <h3>Made by ITS Agroalimentare - Team Software</h3>
