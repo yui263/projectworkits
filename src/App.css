@@ -61,4 +61,21 @@
   background-color: red; 
   text-align: center; 
 
+} 
+
+.grid_container { 
+
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 10px; 
+
+
+} 
+
+.grid_item {
+  
+  flex: 0 0 calc(50% - 5px); 
+  box-sizing: border-box;  
 }
+
+
