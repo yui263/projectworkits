@@ -3,8 +3,11 @@ import './App.css';
 import { useState, useEffect } from 'react'; 
 import vaso1 from './assets/images/vaso1.png'; 
 import vaso2 from './assets/images/vaso2.png';  
-import vaso3 from './assets/images/vaso3.png';  
-import vasca from './assets/images/vasca.png'; 
+import vaso3 from './assets/images/vaso3.png'; 
+import vaso4 from './assets/images/vaso4.png';  
+import vasca from './assets/images/vasca.png';  
+
+
 
 
 
@@ -87,28 +90,28 @@ const intervalloUmidita1 = setInterval(fetchUmiditaVaso, 55000);
 
 
                   <div className='grid_item'> 
-               <h3>VASO CON BASILICO: </h3>
+               <h3>VASO CON BASILICO : </h3>
                <img src={vaso1} alt='basil_vase' height="300px" width="300px" />
                <h2>Umidità terreno : {u1}</h2> 
                </div>
 
 
                <div className='grid_item'>
-               <h3>VASO CON ULIVO: </h3> 
+               <h3>VASO CON ULIVO : </h3> 
                <img src={vaso2} alt='basil_vase' height="300px" width="300px" /> 
                <h2>Umidità terreno : {u2}</h2>  
 </div>
                
                <div className='grid_item'>
-                <h3>VASO CON ROSMARINO 1 : </h3> 
+                <h3>VASO CON ROSMARINO : </h3> 
                 <img src={vaso3} alt='rosemary_vase' height="300px" width="300px" /> 
                 <h2>Umidità terreno : {u3}</h2> 
 
                </div> 
 
                <div className='grid_item'>
-                <h3>VASO CON ROSMARINO 2 : </h3> 
-                <img src={vaso3} alt='rosemary_vase_copy' height="300px" width="300px" /> 
+                <h3>VASO CON SALVIA : </h3> 
+                <img src={vaso4} alt='salvia_vase' height="300px" width="300px" /> 
                 <h2>Umidità terreno : {u4}</h2> 
 
                </div>
